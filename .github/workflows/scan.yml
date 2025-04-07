@@ -41,7 +41,7 @@ jobs:
           TRIVY_SEVERITY: HIGH,CRITICAL  # Optional: Set severity levels to scan for --severity HIGH,CRITICAL --exit-code 1
       
       - name: Upload Artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: trivy-scan
           path: trivy_output.json
